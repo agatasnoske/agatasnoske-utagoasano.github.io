@@ -1,0 +1,127 @@
+@charset "UTF-8";
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "jaFont-b";
+  src: url(../media/font/logotypejp_mp_b_1.1.ttf);
+}
+.c__ja--b {
+  font-family: "jaFont-b";
+}
+
+html {
+  /* common */
+  /* common -end- */
+}
+html .c__opacity {
+  opacity: 0.8;
+}
+html body {
+  overscroll-behavior: none;
+}
+html #video-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+html #video-bg video {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*縦横幅指定*/
+  width: 177.77777778vh;
+  /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+  height: 56.25vw;
+  /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+  min-height: 100%;
+  min-width: 100%;
+}
+html header, html footer {
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 131px;
+  background: #000;
+}
+html header {
+  top: 0;
+  left: 0;
+}
+html header .header-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html footer {
+  bottom: 0;
+  left: 0;
+}
+html footer .footer-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .gmenu {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0;
+  max-width: 1118px;
+  width: 100%;
+}
+html .gmenu a {
+  color: #fff;
+}
+html .gmenu li {
+  text-align: center;
+  max-width: 144px;
+  width: 100%;
+  font-size: 24px;
+}
+html .gmenu li p {
+  padding-top: 20px;
+}
+html section {
+  width: 100vw;
+  height: calc(100vh - 131px - 131px);
+  padding-top: 131px;
+  padding-bottom: 131px;
+}
+html .logo-bg {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+html .logo-bg.en {
+  background-image: url(../media/img/logo_en.svg);
+}
+html .logo-bg.ja {
+  background-image: url(../meida/img/logo_ja.svg);
+}

@@ -1,0 +1,137 @@
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        opacity: 0.8;
+        transition: 1s;
+    }
+}
+p {
+    margin: 0;
+}
+
+@font-face {
+	font-family: 'jaFont-b';
+	src: url(../media/font/logotypejp_mp_b_1.1.ttf);
+}
+
+// @font-face {
+//     font-family: 'jaFont-m';
+// 	src: url(../media/font/logotypejp_mp_m_1.1.ttf);
+// }
+
+// @font-face {
+//     font-family: 'enFont';
+// 	src: url(../media/font/logotypejp_mp_m_1.1.ttf);
+// }
+
+.c__ja--b {
+	font-family: 'jaFont-b';
+}
+
+html {
+    /* common */
+    .c__opacity {
+        opacity: 0.8;
+    }
+    /* common -end- */
+    body {
+        overscroll-behavior: none;
+    }
+    #video-bg {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        overflow: hidden;
+        video {
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*縦横幅指定*/
+            width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+            height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+    header,footer {
+            position: fixed;
+            justify-content: space-between;
+            width: 100%;
+            height: 131px;
+            background: #000;
+    }
+    header {
+        top: 0;
+        left: 0;
+        .header-wrap {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    footer {
+        bottom: 0;
+        left: 0;
+        .footer-wrap {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .gmenu {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 0;
+        max-width: 1118px;
+        width: 100%; 
+        a {
+            color: #fff;
+        }
+        li {
+            text-align: center;
+            max-width: 144px;
+            width: 100%;
+            font-size: 24px;
+            p {
+                padding-top: 20px;
+            }
+
+        }
+    }
+    section {
+        width: 100vw;
+        height: calc(100vh - 131px - 131px);
+        padding-top: 131px;
+        padding-bottom: 131px;
+    }
+    .logo-bg {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        &.en {
+            background-image:url(../media/img/logo_en.svg) ;
+        }
+        &.ja {
+            background-image: url(../meida/img/logo_ja.svg);
+        }
+    }
+    .u__content {
+        
+    }
+}
